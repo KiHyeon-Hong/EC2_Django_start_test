@@ -15,25 +15,25 @@ user@ubuntu:~$ . DjangoTest/bin/activate
 ## Django 프로젝트 생성
 
 ```cmd
-user@ubuntu:~$ django-admin startproject tutorial
-user@ubuntu:~/tutorial$ cd tutorial
+(DjangoTest) user@ubuntu:~$ django-admin startproject tutorial
+(DjangoTest) user@ubuntu:~/tutorial$ cd tutorial
 
-user@ubuntu:~/tutorial$ ./manage.py startapp community
+(DjangoTest) user@ubuntu:~/tutorial$ ./manage.py startapp community
 ```
 
 ## 데이터베이스 생성
 ```cmd
-user@ubuntu:~/tutorial$ ./manage.py migrate
+(DjangoTest) user@ubuntu:~/tutorial$ ./manage.py migrate
 ```
 
 ## 어드민 생성
 ```cmd
-user@ubuntu:~/tutorial$ ./manage.py createsuperuser
+(DjangoTest) user@ubuntu:~/tutorial$ ./manage.py createsuperuser
 ```
 
 ## 서버 돌리기
 ```cmd
-user@ubuntu:~/tutorial$ ./manage.py runserver 8000
+(DjangoTest) user@ubuntu:~/tutorial$ ./manage.py runserver 8000
 ```
 
 # EC2에서 주의할점
@@ -47,7 +47,7 @@ STATIC_URL = '/static/'
 
 ## 서버 실행(외부 접속을 위한)
 ```cmd
-user@ubuntu:~/tutorial$ ./manage.py runserver 0.0.0.0:8000
+(DjangoTest) user@ubuntu:~/tutorial$ ./manage.py runserver 0.0.0.0:8000
 ```
 
 ## EC2의 보안그룹에서 port 8000을 허용
